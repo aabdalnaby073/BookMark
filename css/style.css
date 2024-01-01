@@ -1,0 +1,106 @@
+body{
+    background-color: #f7ecde !important;
+}
+
+header 
+{
+    border-bottom: 2px dotted;
+}
+
+header h1 
+{
+    font-family: 'Pacifico' ;
+    font-size: 50px;
+    color: #352E28;
+    position: relative;
+    z-index: 100;
+}
+
+header h1::after
+{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+    top: 40%;
+    z-index: -1;
+    background-color: #fec260;
+    transition: all 1s;
+}
+
+header h1:hover::after {
+    height: 40%;
+    top: 15%;
+}
+
+section h3 {
+    display: inline;
+    font-family:'Righteous' ;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-size: 25px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+section h3::before {
+    content: '\f02e';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 5px;
+}
+
+section h3::after {
+    content: '\f02e';
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 5px;
+}
+
+#bookNameTitle
+{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "PT Sans Caption" ;
+}
+
+#bookNameTitle::before
+{
+    content: '\e0bb';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 5px;
+}
+
+
+#bookUrlTitle
+{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "PT Sans Caption";
+}
+
+#bookUrlTitle::before
+{
+    content: '\f0c1';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 5px;
+}
+
+.buttons button
+{
+    background-color: #d1512d;
+    color: white;
+    padding: 7px 35px;
+}
+
+.buttons button:hover
+{
+    background-color: #e74619;
+    color: white;
+}
+
+.buttons
+{
+    border-bottom: #352E28 dotted 2px;
+}
